@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf8
+import time
 
 from gevent import monkey, spawn, sleep
 monkey.patch_all()
@@ -14,9 +15,18 @@ def get_all():
                         map="ctf_2fort"):
         
         server = valve.source.a2s.ServerQuerier(address)
+        t1 = time.time()
         info = server.get_info()
-        fields = ['server_name', 'map', 'player_count', 'max_players', 'bot_count', 'password_protected']
-        print  address, '\t'.join(info[f] for f in fields)
+        ttl = time.time() - t1
+        if not info['password_protected']:
+            print  '%s:%s\t%03dms\t%s\t%s\t%s/%s' % (
+                address[0], 
+                address[1], 
+                ttl * 1000,
+                info['server_name'][:15], 
+                info['map'], 
+                info['player_count'], info['max_players']
+            )
 
 
 
