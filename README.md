@@ -1,4 +1,4 @@
 tf2.est.im
 ==========
 
-tf2 servers
+A tool to scan Team Fortress 2 servers using Python
