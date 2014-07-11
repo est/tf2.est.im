@@ -34,29 +34,34 @@ def query_master_server(master_addr=("208.64.200.52", 27011)):
         # break
 
 def query_server(svr_addr):
-    t0 = time.time()
-    "https://developer.valvesoftware.com/wiki/Server_queries"
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    s.settimeout(5)
-    s.sendto('\xFF\xFF\xFF\xFF\x54Source Engine Query\0', svr_addr)
-    b = s.recv(1400)
-    fields = b[6:].split('\0') # 4 byte header, "I", version
-    server_name, map_name, folder_name, game_name = fields[:4]
-    remains = '\0'.join(fields[4:])[:9]
-    # print repr(b), repr(remains)
-    (   game_steam_id, players_no, max_players, bots_no, 
-        server_type, server_os, has_password, has_vac ) = struct.unpack(
-        '<HBBBBBBB', remains
-    )
-    rrt = time.time() - t0
-    print '%s:%s\t%-3sms %-16s %02d/%02d %-2s %-16s' % (
-        svr_addr[0], svr_addr[1], 
-        int(rrt * 1000),
-        map_name[:16].ljust(16), 
-        players_no, max_players, 
-        bots_no if bots_no else '',
-        server_name[:16]
-    )
+    timeout_retries = 5
+    while timeout_retries>0:
+        t0 = time.time()
+        "https://developer.valvesoftware.com/wiki/Server_queries"
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.settimeout(5)
+        s.sendto('\xFF\xFF\xFF\xFF\x54Source Engine Query\0', svr_addr)
+        try:
+            b = s.recv(1400)
+        except socket.timeout:
+            continue
+        fields = b[6:].split('\0') # 4 byte header, "I", version
+        server_name, map_name, folder_name, game_name = fields[:4]
+        remains = '\0'.join(fields[4:])[:9]
+        # print repr(b), repr(remains)
+        (   game_steam_id, players_no, max_players, bots_no, 
+            server_type, server_os, has_password, has_vac ) = struct.unpack(
+            '<HBBBBBBB', remains
+        )
+        rrt = time.time() - t0
+        print '%s:%s\t%-3sms %-16s %02d/%02d %-2s %-16s' % (
+            svr_addr[0], svr_addr[1], 
+            int(rrt * 1000),
+            map_name[:16].ljust(16), 
+            players_no, max_players, 
+            bots_no if bots_no else '',
+            server_name[:16]
+        )
 
 def get_all():
     msq = valve.source.master_server.MasterServerQuerier()
