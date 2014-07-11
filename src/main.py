@@ -2,7 +2,7 @@
 # coding: utf8
 import time, struct
 
-from gevent import monkey, spawn, sleep, socket
+from gevent import monkey, spawn, sleep, socket, pool
 monkey.patch_all()
 
 
@@ -33,17 +33,30 @@ def query_master_server(master_addr=("208.64.200.52", 27011)):
         print 'next packet'
         # break
 
+def mute_exception(func):
+    def wrapper(*args,  **kwargs):
+        try:
+            return func(*args, **kwargs)
+        except:
+            return
+    return wrapper
+
+
+
+@mute_exception
 def query_server(svr_addr):
-    timeout_retries = 5
+    timeout_retries = 3
     while timeout_retries>0:
         t0 = time.time()
         "https://developer.valvesoftware.com/wiki/Server_queries"
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        s.settimeout(5)
+        s.settimeout(2)
         s.sendto('\xFF\xFF\xFF\xFF\x54Source Engine Query\0', svr_addr)
         try:
             b = s.recv(1400)
         except socket.timeout:
+            timeout_retries -= 1
+            # sleep(1)
             continue
         fields = b[6:].split('\0') # 4 byte header, "I", version
         server_name, map_name, folder_name, game_name = fields[:4]
@@ -62,6 +75,7 @@ def query_server(svr_addr):
             bots_no if bots_no else '',
             server_name[:16]
         )
+        break
 
 def get_all():
     msq = valve.source.master_server.MasterServerQuerier()
@@ -96,5 +110,6 @@ if '__main__' == __name__:
     # __import__('BaseHTTPServer').BaseHTTPRequestHandler.address_string = lambda x:x.client_address[0]
     # run(application, host='0.0.0.0', port=8002, reload=True)
 
-    for a in query_master_server():
-        spawn(query_server, a)
+
+    p = pool.Pool(50)
+    p.map(query_server, query_master_server())
