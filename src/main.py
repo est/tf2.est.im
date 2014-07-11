@@ -15,7 +15,7 @@ def query_master_server(master_addr=("208.64.200.52", 27011)):
     s.settimeout(5)
     last_addr = ('0.0.0.0', 0)
     while 1:
-        s.sendto('1\xFF%s:%s\0\0' % (last_addr[0], last_addr[1]), master_addr)
+        s.sendto('1\xFF%s:%s\0\\gamedir\\tf\0' % (last_addr[0], last_addr[1]), master_addr)
         b = s.recv(1400)
         if b.startswith('\xFF\xFF\xFF\xFF\x66\x0A'):
             i = 6
@@ -23,9 +23,13 @@ def query_master_server(master_addr=("208.64.200.52", 27011)):
             i = 0
         while i<len(b):
             saddr = b[i:i+6]
-            last_addr = socket.inet_ntoa(b[i:i+4]), struct.unpack('!H', b[i+4:i+6])[0]
-            yield last_addr
+            this_addr = socket.inet_ntoa(b[i:i+4]), struct.unpack('!H', b[i+4:i+6])[0]
+            if this_addr != last_addr:
+                last_addr = this_addr
+                yield last_addr
             i += 6
+        print 'next packet'
+        # break
 
 
 
