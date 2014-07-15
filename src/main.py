@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 # coding: utf8
 import time, struct
+import locale
 
 from gevent import monkey, spawn, sleep, socket, pool
 monkey.patch_all()
 
-
+ENCODING = locale.getdefaultlocale()[1]
 
 S0 = "hl2master.steampowered.com:27011"
 S1 = "208.64.200.52:27011"
@@ -80,13 +81,13 @@ def query_server(svr_addr):
             '<HBBBBBBB', remains
         )
         rrt = time.time() - t0
-        print '%s:%s\t%3sms %-16s %2d/%-2d %-2s %-16s' % (
+        print '%15s:%-5s %3sms %-24s %2d/%-2d %-2s %s' % (
             svr_addr[0], svr_addr[1], 
             int(rrt * 1000),
-            map_name[:16].ljust(16), 
+            map_name[:24],
             players_no, max_players, 
             bots_no if bots_no else '',
-            server_name[:16]
+            server_name[:17].strip().decode('utf8', 'ignore')
         )
         break
 
@@ -124,5 +125,5 @@ if '__main__' == __name__:
     # run(application, host='0.0.0.0', port=8002, reload=True)
 
 
-    p = pool.Pool(50)
+    p = pool.Pool(100)
     p.map(query_server, query_master_server())
