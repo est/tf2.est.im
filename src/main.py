@@ -71,7 +71,7 @@ def query_server(svr_addr):
             '<HBBBBBBB', remains
         )
         rrt = time.time() - t0
-        print '%s:%s\t%-3sms %-16s %2d/%-2d %-2s %-16s' % (
+        print '%s:%s\t%3sms %-16s %2d/%-2d %-2s %-16s' % (
             svr_addr[0], svr_addr[1], 
             int(rrt * 1000),
             map_name[:16].ljust(16), 
