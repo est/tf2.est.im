@@ -81,6 +81,12 @@ def query_server(svr_addr):
             '<HBBBBBBB', remains
         )
         rrt = time.time() - t0
+        if map_name.startswith((
+            'achieve',
+            'cp_orange_',
+            'trade_',
+        )) or players_no==0:
+	        continue
         print '%15s:%-5s %3sms %-24s %2d/%-2d %-2s %s' % (
             svr_addr[0], svr_addr[1], 
             int(rrt * 1000),
@@ -101,7 +107,7 @@ def get_all():
         t1 = time.time()
         info = server.get_info()
         ttl = time.time() - t1
-        if not info['password_protected']:
+        if not info['password_protected'] and ttl<0.300:
             print  '%s:%s\t%03dms\t%s\t%s\t%s/%s' % (
                 address[0], 
                 address[1], 
