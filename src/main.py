@@ -12,6 +12,8 @@ S0 = "hl2master.steampowered.com:27011"
 S1 = "208.64.200.52:27011"
 S2 = "208.64.200.39:27011"
 
+result = open('result.txt', 'w')
+
 def query_master_server(master_addr=("208.64.200.52", 27011)):
     "https://developer.valvesoftware.com/wiki/Master_Server_Query_Protocol"
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -85,16 +87,19 @@ def query_server(svr_addr):
             'achieve',
             'cp_orange_',
             'trade_',
-        )) or players_no==0:
-	        continue
-        print '%15s:%-5s %3sms %-24s %2d/%-2d %-2s %s' % (
+        )) or players_no==0 or rrt>0.4:
+	        break
+        fmt = '%15s:%-5s %3sms %-24s %2d/%-2d %-2s %s'
+        params = (
             svr_addr[0], svr_addr[1], 
             int(rrt * 1000),
             map_name[:24],
             players_no, max_players, 
             bots_no if bots_no else '',
-            server_name[:17].strip().decode('utf8', 'ignore')
         )
+        result.write(fmt % (params + (server_name,)))
+        result.write('\n')
+        print  fmt % (params + (server_name[:17].decode('utf8', 'ignore').strip(),))
         break
 
 def get_all():
