@@ -1,0 +1,223 @@
+ 58.211.120.140:27015  62ms vsh_cross_b3             32/32    ❤「你在那还好吗」 5# 熊孩子打怪兽 ** [SeMan] **
+ 58.211.120.140:27017  59ms slender_the_abyss_v3      1/24    ❤「你在那还好吗」 7# 吓哭小学生 ** [Slender] **
+ 220.166.58.228:27015  58ms cp_dustbowl               8/8     ﻿﻿量子6#| www.shait.net(电信MVM服)
+    42.2.220.48:27015  53ms cp_coldfront              1/24    [IBG]Official Settings(24/7)
+   42.2.181.153:27016  48ms pl_goldrush               4/24    [HK] Trilogy / 2 - Essentials
+  14.136.53.252:27041  54ms mvm_coaltown_advanced2    6/6     [hsp.hk] MVM #1
+  210.6.154.142:27015  72ms vsh_battle2thedeath_b6   24/32    瑞曲星Reachhl2.com | 妖獸要塞One‧Man‧Army‧GAY
+   42.2.181.153:27017  59ms pl_upward                24/24    [HK] Trilogy / 3 - Payload Only
+   42.2.181.153:27015  65ms pl_thundermountain       24/24    [HK] Trilogy / 1 - Official Setting
+  210.6.154.142:27017  75ms slender_asylum_redux2    11/32    瑞曲星Reachhl2.com | 魅影大逃殺SlenderFortress
+ 94.137.192.210:27017 134ms mvm_bigrock               5/6     Weacom.ru | Irkutsk {TF2 MvM} {10 Players, 666 Event}
+  14.136.53.252:27016  65ms cp_dustbowl               1/24    [hsp.hk] Vanilla TF #1 (Now uses 'playerranks')
+  222.133.5.230:27015 194ms koth_harvest_final        1/24    [CN][山东网通] 1# 半速生混战/公麦-RANK
+ 91.230.210.135:27015 167ms cp_dustbowl               6/24 6  OptiZone.RU TF2 #2 [Official Maps,GameME,FD]
+  222.133.5.230:27018 226ms dm_store_pro             19/24    [CN][山东网通] 4# 速生死斗/公麦-RANK
+  114.33.78.165:27015  72ms cp_gravelpit             28/30    ♥ Tω~ 呼嚕呼嚕 HuLuX2 | 速生 | Fast Respawn
+ 14.199.219.107:27017 204ms ach_villains_city_day_v3 32/32    [Just kill] 掛機、交易 server #2
+   58.176.41.76:26973 213ms BM1V4                    23/32 18 #4緣之空&NextLevelGaming | 掛機、交易、解成就 | Idl
+   58.176.41.76:26971 218ms ach_ysxmas_v1            32/32    #2緣之空&NextLevelGaming | 掛機、交易 | Idle,Trade
+   58.176.41.76:26974 224ms dr_cliffsideb6           17/32    緣之空&NextLevelGaming | 死亡賽跑 | Deathrun
+   58.176.41.76:26975 222ms ph_watchtower_a1         12/32    緣之空&NextLevelGaming | 捉迷藏 | Prophunt
+   58.176.41.76:26976 219ms mvm_mannhattan            7/10    #1緣之空&NextLevelGaming | 曼恩決戰機械人 | MVM
+   58.176.41.76:26972 217ms BM1V4                    23/32 18 #3緣之空&NextLevelGaming | 掛機、交易、解成就 | Idl
+  112.121.95.92:27016  75ms cp_steel                  2/32    [TW]173蒼井空的彈道02
+   59.127.5.203:27016  97ms mvm_mannhattan            5/10    |=MvM Server=| 341464 Room |RTD|
+113.252.143.248:27015 237ms jail_wtc_b8_tf2jail      26/26    [HK]Windroid伺服器<越獄>|<JailBreak>
+112.118.118.122:27015 240ms itemtest                 29/32    Testing
+ 112.118.194.23:27022 237ms tfdb_spacebox_a2          8/22    [HK]#2 Hours Played, Inc.|閃避球|Dodgeball|
+   58.176.41.76:26978 239ms jump_fox                  6/32    緣之空&NextLevelGaming | 跳躍練習 | Jump Training
+   58.176.41.76:27015 234ms vsh_livingroom_v2        25/32    [iGamers.org] 妖獸要塞#1 (１。５倍經驗進行中！)
+ 113.252.202.40:27015 232ms mvm_mannworks             7/6     [Plugins]MVM Moment
+   58.176.41.76:26977 233ms mvm_mannworks            10/10    #2緣之空&NextLevelGaming | 曼恩決戰機械人 | MVM
+   58.176.41.76:26970 243ms ach_yosuganosora_v11     23/32    #1緣之空&NextLevelGaming | 掛機、交易 | Idle,Trade
+  193.169.52.52:28555 286ms ctf_2fort                 3/24 3  TF4WAY.ru SIBERIA | 2FORT | -=3=-
+ 178.49.245.144:58885 281ms slender_sewer_b1a        15/32    ★gamer54.ru★|Новосибирск|SLENDER FORTRESS 2
+ 178.49.245.144:28880 282ms cp_dustbowl               4/24    ★trololo-nsk.ru★|Новосибирск|Asteroid Only
+    1.34.26.203:27015 113ms cp_gorge                 26/26    [TW] 台灣 TF2 伺服器
+ 202.39.235.138:27025 107ms ph_snowworks_a3           7/30    【台灣】絕地要塞TF2 ★PropHunt‧躲貓貓★
+113.252.233.166:27017 274ms koth_harvest_final       19/24    [HK] #2 香港 | HKCSSZM.com | TF2
+ 14.198.221.179:27016 272ms plr_highwind_a5          13/32    冷場館娛樂伺服器|官方遊戲模式(Official Gamemode)
+  14.198.161.64:27015 233ms dr_delay_b1_fixed         8/32    怪獸曲奇|會死亡既賽跑
+  95.170.151.90:27015 317ms ctf_orange_bridgeway_c   11/28    TF4WAY.ru SibRU-ORANGE | Пpиятнoй игpы | -=1=-
+ 90.189.192.217:27016 317ms arena_2fort_night_final   9/24    *** Sibnet.ru Team Fortress 2 - VS Saxton Hale ***
+ 178.49.245.144:28810 314ms vsh_farm_feud            22/24    ☆ [ТрОлОлО] SAXTON HALE ☆
+ 178.49.245.144:28888 316ms cp_fastlane              24/24    TROLOLO-NSK.RU| Новотелеком ТрОлОлО
+ 178.49.245.144:28898 315ms cp_dustbowl               1/12    TROLOLO-NSK.RU| ★ [ MIX 54 RUS ] ★
+ 109.123.152.71:27016 313ms mvm_mannworks_advanced    2/6     TF2.TOMSK.RU #2 MvM
+ 109.123.152.71:27015 314ms cp_egypt_final            5/24    TF2.Tomsk.Ru #1 Public | Siberian Mayhem
+   218.4.104.26:27015  80ms koth_harvest_final        3/16    高科技
+ 202.39.235.138:27085 105ms cp_granary                6/32    [TW] TWFL.twf.tw PUG/Scrim - AFC Config
+221.224.110.166:27016  82ms jump_littleman_v4         3/24    ❤「你在那还好吗」 10# 欢乐随心跳 ** [Jump] **
+   58.176.41.76:26979 253ms ach_yosuganosora_v11      1/32    #1緣之空&NextLevelGaming | 掛機、交易 | Idle,Trade
+ 59.127.254.151:27015 144ms vsh_garbage_day_pb1      31/30    [TW]屏東娛樂 - 妖魔要塞 #1
+ 223.16.203.208:27015 256ms pl_thundermountain        2/16    Absolute Fatality Kingdom
+ 202.39.235.138:27015 109ms cp_dustbowl               5/24    【台灣】絕地要塞TF2 ★官方設定‧大戰場#1★
+221.224.110.166:27017  92ms cp_badlands              16/24    ❤「你在那还好吗」 11# 推土机归来 ** [RANDOM] **
+ 202.39.235.138:27019 121ms pl_goldrush               3/24    【台灣】絕地要塞TF2 ★官方設定‧大戰場#2★
+ 122.224.149.18:27015  95ms vsh_weaponsdepot_final   27/30    27015.com - TF2 决战大胸毛 厕所服(QQ群:121588123)
+221.224.110.166:27015  96ms vsh_dr_forest_b7_fix     22/24    ❤「你在那还好吗」 9# 夺命大逃亡 ** [DeathRun] **
+   218.4.104.28:27015  98ms ctf_sawmill              20/24    ❤「你在那还好吗」 8# 官方标准服 ** [Classic] **
+180.173.166.173:27015  70ms mvm_rottenburg            6/6     ﻿﻿量子5#| www.shait.net(电信MVM服)
+ 89.189.178.228:27016 368ms plr_hightower             2/24    ★Zion54.net★ [TF2#1 - Popular Maps][HLX,Crits,Spread]
+ 115.29.235.168:27015  67ms cp_granary               12/25    [Elements #3]TF2 MGE/Pug/Scrim/Ultiduo Competitive Gaming
+ 115.29.235.168:27017  69ms cp_process_final          1/24    [Elements #2]Team DeathMatch (SOAP) {5CP/Comp Maps, NoCrits}
+ 115.29.235.168:27016  71ms jump_annex_v5             3/12    [Elements #6]Jump Challenger
+211.151.127.170:27019  72ms plr_nightfall_final       3/24    27015.com - TF2 PUB [97Club]
+   5.129.198.25:27015 378ms mvm_mannhattan            1/6     Milbor's MvM Server | Kicks and bans without warning
+   203.222.16.7:27016 289ms achie_strange_weapons_id 10/32 5  Hunte(R)中隊 專屬掛機伺服器 hunter-team.twbbs.org
+  219.69.17.198:27015 226ms pl_upward                23/24 20 Team Fortress 2
+  116.121.97.30:27015  78ms cp_foundry                8/24 4  Team Fortress
+   218.54.46.90:27019 100ms vsh_top_arena_v1         19/31    [KR]꿀꿀이의 프리크포트리스2
+    49.1.244.74:20230 135ms aot_castle_v3            13/32    MR-X 진격의거인 
+ 125.180.15.139:27017  82ms mvm_open_final_industry  10/10    『B@N』포니 + MANN VS MACHINE #2
+ 115.68.110.140:27029 101ms koth_badlands            30/30    [KR] Fuzz의 화력덕후공방
+112.153.171.176:27012 107ms surf_snow_arena_v4       18/28    [GF] 게임포럼 서프낙하산 서버!
+    49.1.244.75:20220 142ms surf_akai_f1n4l          19/28    [KR] 24시간 WALTZ의 낙하산,버니합 서프서버
+  112.171.42.14:27032 113ms ctf_2fort                23/32    [KOR]센트리건의 무한총알 오리지널 서버
+ 125.180.15.139:27016 116ms mvm_rottenburg           10/10    『B@N』포니 + MANN VS MACHINE #1
+ 125.180.15.139:27026  81ms TF2Ware_v2               11/24    『B@N』미니게임 서버 [완전 한글화]
+ 211.51.168.203:27015 125ms tr_walkway_fix           16/30 15 Team Fortress 2
+175.211.228.229:27035 119ms vsh_minedepressao        24/32    [KR] 데모닉소울 - VS 색스턴 헤일 (레벨업 모드!)
+    49.1.244.75:20110 124ms f12_estate_a4            28/30    [KR] 대피의 좀비 감염시키는 서버
+  112.171.42.14:32000 112ms ph_cchotel_b2            13/24    [KOR]센트리건의 프롭헌트 서버
+    183.98.9.89:27015 124ms ctf_2fort                16/24 12 [TF2 ASIA][HANA GAMING]-2FORT ONLY/투포트/に-ポト/
+ 119.196.47.133:27015 122ms cp_bamorange_x3_v2_t24   30/30    [밤] Bam Gaming #1 : 여러가지 섞인 오렌지
+  119.196.47.43:27015 124ms cp_toy_fort_elite_fix    28/28    [KR] YoonFIELD.com 오리지널 토이포트
+ 115.68.110.140:27017 112ms mge_training_v8_beta4b    3/24    [T4U.kr]아시다시피 1vs1 MGE / AshitaCP 1vs1 MGE
+ 119.196.47.195:20000 117ms vsh_n_orange_tower_fix   32/32    [GF]TFDS시즌2 괴물-색스턴헤일서버
+    49.1.244.75:20005 137ms pl_badwater               3/30    [KR] Play Highlander PUG 24/7
+    49.1.244.75:30000 118ms tfdb_box_space_a5_fix    11/20    [KR] 24시간 Sunny의 닷지볼서버[피구]
+    49.1.244.75:20230 137ms wacky_races_v2            6/24    (KR)거래도하고 스포츠도 하는 서버
+ 119.196.47.216:27015 135ms vsh_hakurei_shrine_v3    17/30    [KR]24시간 꽃의 총알무한헤일 서버
+  119.196.47.43:27018 128ms cp_medieval__siege        5/30    [KR] YoonFIELD.com 중세서버
+211.198.114.202:27018 121ms ba_mlcastle_v4           23/24    [GF] 게임포럼 감옥 서버
+  119.196.47.43:27019 115ms jump_devils_redo          2/20    [KR] YoonFIELD.com 프로용 점프 서버!
+    49.1.244.75:30001 142ms vsh_partyisland_v7nw     18/32    [GF] 24시간 Sunny의 총알무한 헤일서버[효과이벤]
+ 125.180.15.139:27019  88ms dr_cube_v2                9/32    『B@N』포니 + 데스런 서버 [프리크]
+  119.196.47.43:27016 129ms jump_adventure            7/20    [KR] YoonFIELD.com 초보용 점프 서버!
+ 219.68.165.103:27015 361ms pl_badwater              19/25 10 Zitrus的BOT練習伺服器
+   1.227.159.99:27015  71ms slender_gutters_b1b_fix  23/25    [KR][공포] 슬랜더맨..
+112.153.171.176:27011 101ms vsh_cairo_pyramid_v4     10/28    [GF] 게임포럼 헤일 서버!
+125.142.161.171:27111 110ms vsh_partyisland_v7nw     25/32    [KR]뿌아앙 헤일서버
+ 112.154.208.57:27015  85ms tfdb_breakbuilding_v1    15/18    [KR]Sky's Gaming ::Dodgeball::
+    49.1.244.75:20200 116ms vsh_mineboi_b8fixed      11/32    [KR]라임이헤일서버(언유,넴택이벤트)
+  112.171.42.14:40000 112ms surf_buck-fever_tf2      13/32    [KOR]센트리건의 센트리다운!한 서프서버
+    49.1.244.74:20005 121ms vsh_killbox_8bit_b8fixed  7/32    [KR]24시간 아기사자의 총알무한 헤일서버
+ 182.225.135.19:27016 106ms pl_goldrush              28/28    [KR] ::BedCompany:: 골러/더볼/배워/브릿츠/후두+a
+  61.84.142.164:27017 128ms slender_swamp_v3         16/24    [Queen] 슬렌더 포트리스 KR [54b / 26m]
+   218.54.46.83:27025  98ms pl_goldrush              23/33 23 [Robot-Battlefield] Zeisen RPG Server v3 #2
+  112.171.42.14:51001 118ms cp_badlands               6/24    [KOR]센트리건의 랜덤무기 클래스vs클래스 서버
+211.198.114.202:27036 115ms mvm_bigrock               6/6     [GF] 게임포럼 MVM 서버
+211.198.114.202:27033 122ms ba_chretien_v1c           9/24    [GF] 게임포럼 감옥 서버 3
+ 121.181.97.200:27015 118ms vsh_mineboi_b8fixed       4/32    [東方]Only 동방 헤일서버
+ 121.182.149.14:27019 131ms airshot_tommy_beta5_fix3 11/15 4  [KR] TommY's 솔저, 데모 Airshot 실력키우기 서버
+ 175.193.186.99:27035 118ms pl_cactuscanyon          10/24 3  ❤ 공방 [CP+PL]
+    49.1.244.75:20070 144ms arena_starship_b2        16/32    [KR]사탕게비의 달콤한 무한헤일서버(24시간)
+ 175.204.168.21:27019 127ms vsh_area_54tress_b4      10/32    멍청멍청의 믕층믕층한 헤일서버
+ 183.100.32.215:27015 121ms discords_canterlot_b8    15/24    [KR]지극히 평범한 포니맵 서버[평화시즌]
+   61.77.116.31:27016 117ms vsh_minegay_b3            6/25    [KR]Supermaket7의 프리크헤일서버!(언유,효과이벤)
+ 175.204.168.21:27018 131ms vsh_mineboi_b8fixed      15/32    [KR]포돌이의 철컹철컹한 헤일서버
+211.198.114.202:27032 127ms Trade_Minecraft_Realms_F 12/30    [GF] 게임포럼 거래 서버
+ 115.68.110.140:27027 146ms cp_snakewater            21/28    [KR] Fuzz의 클래식서버
+    49.1.244.75:23500 147ms pl_barnblitz              8/24    [korsc] 수레맵만 돌리는 서버 support REPLAY (payload s
+   218.54.46.83:27019  91ms pl_goldrush              31/33 23 [Robot-Battlefield] Zeisen RPG Server v3
+ 125.180.15.139:27015  85ms mvm_coaltown             10/10    『B@N』15WAVE OF DEATH [MvM]
+    49.1.244.74:20004 106ms cp_rainbow_square_3      15/32    『SB』무지개의 거래하는 오렌지
+211.198.114.202:27019 124ms ba_chretien_v1c          24/24    [GF] 게임포럼 감옥 서버 2
+  118.32.74.174:27016 217ms dm_hakugyokurou_fanaifix 12/20    (東方)동덕들의 동방맵 서버
+  221.161.35.26:27015 134ms tr_walkway_rc2           17/24 16 Team Fortress 2
+ 202.213.210.22:27016 110ms cp_dustbowl              24/28 5  [JP] PuniPuni na Are Server 2 [OfficialMaps]
+  61.84.142.164:27015 130ms dm_mariokart3_v1          1/31    [Queen] 슈헤르트롤링
+  118.32.74.174:27015 233ms dr_office_v2             22/32    데스런같지만 데스런같은 데스런서버
+ 202.213.210.22:27015 122ms cp_gravelpit             22/28 17 [JP] PuniPuni na Are Server 1 [Custom+]
+122.131.128.174:27016 144ms pl_halfacre               8/28    [JP] iNkofield playground |Returns|[200+ custom maps!]
+  106.186.17.11:27015 155ms pl_goldrush               8/32    GunPowdr TF2 - Vanilla
+122.131.128.174:27015 136ms pl_millstone_b4          32/32    [JP] Custom Soba Reduuux!! | VC All Talk
+ 202.213.210.22:27018 117ms mge_training_v8_beta4b    3/20    [JP] PuniPuni na Are Server 4 [MGEMod/TF2DM/DM] PREMIUM Priorit
+ 126.16.207.125:27015  91ms arena_well                4/4     yurutas
+ 202.213.210.22:27017 121ms jump_amazon_b1            3/16    [JP] PuniPuni na Are Server 3 [Jump/Skill] PREMIUM Priority
+ 126.44.193.114:27015  83ms pl_goldrush              16/24 15 [JP] [PL] Mo- Muri! (+o+)/
+ 49.212.164.108:27015 268ms mvm_open_final_industry   5/6     Sushi MvM #1 Wave 3/7
+ 49.212.170.185:27015 269ms mvm_desert_fort_lite      6/6     Sushi MvM #2 Wave 3/5
+  49.212.128.77:27021 278ms jump_bomb                 1/12    [JP] JONAN-SHINAGAWA JUMP! [EXPERT][JUMP][JP/PREMIUM ONLY]
+113.148.221.202:27015 180ms dm_mariokart2_b3          6/32    [JP] Hakushin Karate Club Sever
+  157.7.209.231:27015 299ms mvm_mannhattan            5/6     [jp]キャス子鯖
+  95.154.113.83:27046  92ms mvm_mannworks             6/6     Gamepolis.ru TF2 Public #4 | MvM
+   157.7.152.75:27015 276ms mvm_mannhattan_advanced2 10/10    Sushi MvM #D Wave 2/6
+ 49.212.178.241:27015 272ms mvm_destruct              5/6     Sushi MvM #5 Wave 1/6
+ 49.212.170.212:27015 268ms mvm_coaltown              6/6     Sushi MvM #A Wave 5/6
+  153.121.64.89:27015 349ms slender_sanatorium_b2     1/24    [JP] TF2ModFanClub - Slender Fortress - 海外ホラーMod
+   157.7.202.19:27015 308ms pl_badwater              24/24    [JP] めうめうサーバ #2 [PL+CP+KOTH]
+   157.7.202.19:27018 316ms pl_angkor_rc1            14/24 14 [JP] めうめうサーバ #6 [PL]
+   157.7.202.19:27019 316ms jump_amazon_b1            2/12    [JP] めうめうサーバ #5 [JUMP]
+ 133.242.158.84:27015 360ms mvm_destruct              5/6     Sushi MvM #C Wave 3/6
+133.242.163.232:27015 358ms mvm_mannworks_double      6/6     Sushi MvM #B Wave 1/7
+ 113.252.125.66:55    248ms vsh_skyhigh_resort_b8     3/24    [HK]活域遊戲-Jer獸要塞JF2(夏日限定!)
+   218.54.46.90:27035 100ms arena_offblast_final      1/30    [KR]물개vs홀맨의 해일서버
+  118.32.74.174:27018 164ms vsh_minegay_b3           17/32    (東方)무한총알 동방헤일(프리크) 서버
+  94.177.121.10:27016 399ms mario_kart_2_v30         10/24     [RO] * MarioKart * [RTD]
+   31.13.222.76:27315 323ms dm_store                 21/24    =BG=Company DM STORE www.bgcompany.eu
+  31.210.38.149:27015 338ms mario_kart_2_v30         28/32    BilgeOyuncu TF2 Mario Kart #1 | EU-TR
+    176.53.17.7:27015 332ms pl_badwater              26/28    TF2Turkiye | NrT Public #1 | gameME
+   93.113.3.112:27015 363ms pl_goldrush              26/27    RamBase TF2 Classic | tf2.rambase.ro
+ 86.107.224.168:27015 381ms dm_duel_v1               26/27    RamBase TF2 Deathmatch | tf2dm.rambase.ro
+ 86.107.224.168:29015 358ms jump_rush                28/28    RamBase TF2 WAR #2 | tf2war.rambase.ro:29015
+   185.40.86.10:27016 319ms ctf_turbine              13/28    Kavun Pub | Sponsor: www.bilrom.com
+   93.113.3.119:27015 350ms koth_sawmill             10/24 5  RamBase TF2 No Rnd Crits | tf2play.rambase.ro
+ 86.107.224.168:28015 358ms mvm_coaltown              6/6     RamBase TF2 WAR #1 | tf2war.rambase.ro:28015
+   176.53.23.22:27015 313ms arena_watchtower         11/12    Oyunları Seviyoruz | oyunlariseviyoruz.net # TF2 FunBox Server
+  31.210.38.149:27030 333ms cp_degrootkeep           12/18    BilgeOyuncu TF2 Medieval #1 | EU-TR
+ 86.107.224.166:27015 368ms mvm_mannhattan            6/6     RamBase TF2 MvM
+ 86.107.224.169:27015 360ms pl_badwater              23/24    RamBase TF2 Payload | tf2pl.rambase.ro
+  89.44.246.170:27015 362ms arena_watchtower         21/24    TF2 Romania | VS Saxton Hale | vsh.tf2.ro
+195.230.115.200:27015 318ms mvm_mannhattan            6/6       mvm for players
+  188.49.88.104:27015 368ms dm_duel_spr_a1           14/32    KSA|Special Friends|Team Deathmatch
+   86.98.46.211:27096 319ms koth_sawmill              6/26    TTEsports Cafe Dubai - Gaming420.com - Vanilla
+    77.31.54.56:27015 391ms plr_pipeline             19/28    NakedGaming |
+   2.51.197.115:27017 299ms jail_anthology_b2_tf2jai  5/24    {UAE} Its7up's Jailbreak Server
+ 31.168.136.190:27016 347ms surf_greatriver          32/32    Gamers-Israel.co.il  | Surf (Ranking)
+ 31.168.136.181:27065 347ms ba_jail_summer_b1_opst    8/32    Gamers-Israel.co.il | Jailbreak *New Maps* 
+ 31.168.136.190:27018 351ms sniper_crevasse          11/24    Gamers-Israel.co.il  | Sniper Only
+  89.138.95.200:27015 358ms idle_doctown_a9           4/24    trade server
+ 31.168.136.190:27017 351ms rd_asteroid              22/24    Gamers-Israel.co.il  | Asteroid of Israel ( 24/7 Rd_Asteroid)
+ 31.168.136.190:27019 353ms mvm_mannhattan            3/6     Gamers-Israel.co.il  | MvM ( Mann vs Machine)
+ 109.67.139.161:27015 393ms surf_greatriver           8/32    Conga's and Claptrap's Greatriver surfing server
+  80.254.96.155:27030 302ms mario_kart2_ig8           5/32    gamering.ru | #5 Mario Kart [FUN]
+  194.28.212.28:27017 382ms surf_10x_tf2_complete    28/30    MT-GameS | TF2 [#3] | SURF
+   93.125.54.16:27025 259ms koth_sawmill              1/32    PlayHard.by TF2 Server
+ 91.218.212.213:27025 303ms plr_hightower_event      16/24         VBIOS.COM  #2 | HALLOWEEN 24/7 | FAST
+  77.88.252.161:27253 358ms koth_lakeside_final       2/24    MyArena.ru тестовый сервер [100tick]
+  46.109.194.31:27015 279ms Old_Potato_idle_v1,2      4/32    TF2-Potato-Idle-S-e-r-v-e-r
+ 80.232.169.233:27015 269ms plr_nightfall_final       8/31 2  GIGN TF2 Main | tf2.gign.lv
+   77.38.222.60:27019 305ms mvm_ghost_town            5/6     dSmile Random Maps [tf2.lv]
+   77.38.222.60:27016 304ms mvm_ghost_town            2/6     dSmile MvM [tf2.lv]
+  89.166.50.111:27666 385ms mvm_mannworks             3/6     Pelipurkki.fi - Mann VS Machine
+   46.162.67.57:27017 351ms mario_kart_cp_a8_8f_vk    8/32    BMFS // Virginkart 24/7
+   46.162.67.57:27018 358ms surf_overcast_v1         15/32    Skufs.net | Surf Fun 24/7
+109.204.178.145:27015 365ms tr_walkway_rc2           16/24 16 DISCRIMINATION FREE ZONE
+  91.151.187.35:27030 269ms tfdb_octagon              6/14    OZK Team-Fortress 2 Dodgeball
+ 188.227.47.195:27015 289ms tfdb_vent_a3              9/32    T E Y L A - G A M E S . R u | DODGEBALL | GameME
+  188.65.69.196:27015 305ms cp_dustbowl              14/24    [ A L T F S ] - ALTFS.RU #1 by Alice [PopularMaps 05:00-20:00]
+  188.65.69.196:27016 309ms pl_goldrush              23/24    [ A L T F S ] - ALTFS.RU #2 by Alice [Goldrush/Dust/Badwater]
+   94.19.248.34:26020 314ms supernatural_village_v1b  7/29    BigPing Brony Server (RUS) 24/7
+ 188.227.47.195:27017 276ms mvm_ghost_town           10/10    T E Y L A - G A M E S . R u | 10 MANN VS MACHINE | GameME
+  193.26.217.14:27294 277ms arena_well               16/16    Gamers League of Pikabu [Saxton Hale]
+ 188.227.47.195:27016 267ms mario_kart2_ig8          26/32    T E Y L A - G A M E S . R u | MARIO_KART2 *RTD* | GameME
+  188.65.69.196:27017 318ms cp_dustbowl              12/24    [ A L T F S ] - ALTFS.RU #3 by Alice [Dustbowl ONLY]
+     5.16.68.73:27318 398ms ctf_2fort                 6/24 6  #3 ZetPlay.Ru TF2 24/7 2fort [INSTANT RESPAWN]
+  193.26.217.40:27023 257ms arena_lumberyard          6/16    Serva4ok.ru Team Fortress - 2 server
+  188.65.69.196:27040 310ms ctf_2fort                24/24    [ A L T F S ] - ALTFS.RU #6 by Alice [2Fort Fastresp]
+  80.93.176.243:27016 311ms mvm_coaltown              6/6     [R.T.S.] swnet.spb.ru MVM
+ 188.227.47.194:27016 263ms arena_dust                7/32    T E Y L A - G A M E S . R u | VS SAXTON HALE | GameME
+  91.151.187.35:27027 260ms jump_fear_redo_fix        6/16    OZK Jump [solly, hard, 54:22 left]
+  91.151.187.35:27032 275ms koth_viaduct              2/24    OZK Team-Fortress 2 Koth
+ 188.227.47.194:27015 258ms dm_mariokart_2014_super   2/32    T E Y L A - G A M E S . R u | MARIO_KART2 #2 *RTD* | GameME
+  188.65.69.196:27019 304ms mge_training_v8_beta4b   14/24    [ A L T F S ] - ALTFS.RU #5 by Alice [Moscow True MGEmod]
+ 178.162.34.110:27017 309ms ctf_turbine              14/24 14 XPenia's TF2 ( Russia | Autoupdate )
+ 188.227.47.193:27016 367ms dr_darkenergy_v3         23/32    T E Y L A - G A M E S . R u | DEATHRUN | GameME
+   77.241.20.23:27027 334ms ctf_2fort                 7/24    _F_A_S_T_K_I_L_L_._R_U_| 2 F O R T
+   77.241.20.23:27028 339ms cp_degrootkeep           10/24    _F_A_S_T_K_I_L_L_._R_U_| D E G R O O T K E E P
+  83.222.97.209:27201 256ms cp_dustbowl               2/31    Fun Team Fortress 2 Server [FAST RESPAWN]
+  94.245.155.26:27038 210ms mvm_mannworks             6/6     Terra Infinity TF2
+  94.245.155.26:27033 213ms koth_sawmill              2/24    Terra Magnum TF2
