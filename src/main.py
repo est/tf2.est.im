@@ -84,9 +84,11 @@ def query_server(svr_addr):
         )
         rrt = time.time() - t0
         if map_name.startswith((
-            'achieve',
+            'ach',
+            'vsh_',
             'cp_orange_',
             'trade_',
+            'ctf_2fort',
         )) or players_no==0 or rrt>0.4:
 	        break
         fmt = '%15s:%-5s %3sms %-24s %2d/%-2d %-2s %s'
