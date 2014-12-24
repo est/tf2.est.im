@@ -62,6 +62,8 @@ def mute_exception(func):
 @mute_exception
 def query_server(svr_addr):
     timeout_retries = 3
+    t0 = 0
+    data = None
     while timeout_retries>0:
         t0 = time.time()
         "https://developer.valvesoftware.com/wiki/Server_queries"
@@ -69,40 +71,47 @@ def query_server(svr_addr):
         s.settimeout(2)
         s.sendto('\xFF\xFF\xFF\xFF\x54Source Engine Query\0', svr_addr)
         try:
-            b = s.recv(1400)
+            data = s.recv(1400)
+            break
         except socket.timeout:
             timeout_retries -= 1
-            # sleep(1)
             continue
-        fields = b[6:].split('\0') # 4 byte header, "I", version
-        server_name, map_name, folder_name, game_name = fields[:4]
-        remains = '\0'.join(fields[4:])[:9]
-        # print repr(b), repr(remains)
-        (   game_steam_id, players_no, max_players, bots_no, 
-            server_type, server_os, has_password, has_vac ) = struct.unpack(
-            '<HBBBBBBB', remains
-        )
-        rrt = time.time() - t0
-        if map_name.startswith((
-            'ach',
-            'vsh_',
-            'cp_orange_',
-            'trade_',
-            'ctf_2fort',
-        )) or players_no==0 or rrt>0.4:
-	        break
-        fmt = '%15s:%-5s %3sms %-24s %2d/%-2d %-2s %s'
-        params = (
-            svr_addr[0], svr_addr[1], 
-            int(rrt * 1000),
-            map_name[:24],
-            players_no, max_players, 
-            bots_no if bots_no else '',
-        )
-        result.write(fmt % (params + (server_name,)))
-        result.write('\n')
-        print  fmt % (params + (server_name[:17].decode('utf8', 'ignore').strip(),))
-        break
+    if not data: return
+    out = {'rtt': time.time() - t0 }
+    fields = data[6:].split('\0') # 4 byte header, "I", version
+    out.update((k, fields[i]) for i, k in enumerate(
+        'server_name map_name folder_name game_name'.split(' ')
+    ))
+    remains = struct.unpack('<HBBBBBBB', '\0'.join(fields[4:])[:9])
+    out.update((k, remains[i]) for i, k in enumerate([
+        'game_steam_id', 'players_no', 'max_players', 'bots_no', 
+        'server_type', 'server_os', 'has_password', 'has_vac' 
+    ]))
+    return out
+
+def get_server_desc(svr_addr):
+    ret = query_server(svr_addr)
+    if not ret: return
+    if ret['map_name'].startswith((
+        'ach',
+        'vsh_',
+        'cp_orange_',
+        'trade_',
+        'ctf_2fort',
+    )) or ret['players_no']==0 or ret['rtt']>0.4:
+        return
+    fmt = '%15s:%-5s %3sms %-24s %2d/%-2d %-2s %s'
+    params = (
+        svr_addr[0], svr_addr[1], 
+        int(ret['rtt'] * 1000),
+        ret['map_name'][:24],
+        ret['players_no'], ret['max_players'], 
+        ret['bots_no'] if ret['bots_no'] else '',
+    )
+    result.write(fmt % (params + (ret['server_name'],)))
+    result.write('\n')
+    sn = ret['server_name'][:17].decode('utf8', 'ignore').encode(ENCODING, 'ignore')
+    print  fmt % (params + (sn.strip(),))
 
 def get_all():
     msq = valve.source.master_server.MasterServerQuerier()
@@ -139,4 +148,4 @@ if '__main__' == __name__:
 
 
     p = pool.Pool(100)
-    p.map(query_server, query_master_server())
+    p.map(get_server_desc, query_master_server())
