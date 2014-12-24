@@ -22,11 +22,12 @@ def index():
 def enum_server():
     response.content_type  = 'text/event-stream'
     response.cache_control = 'no-cache'
-    yield 'retry: 1000\n\n'
-    r = addr_gen.next()
-    print r
-    if r:
-        yield 'data: %s' % json.dumps(query_server(r))
+    yield 'retry: 1000\n'
+    while True:
+        r = addr_gen.next()
+        print r
+        if r:
+            yield 'data: %s\n\n' % json.dumps((r))
  
 if '__main__' == __name__:
     run(server=GeventServer)
