@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="http://rawgithub.com/joequery/Stupid-Table-Plugin/master/stupidtable.min.js"></script>
+<head>
+<meta charset="UTF-8" />
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="http://rawgithub.com/joequery/Stupid-Table-Plugin/master/stupidtable.min.js"></script>
 
-    <script>
-      $(document).ready(function() {
-        var es = new EventSource("/enum_server");
-        es.onmessage = function (e) {
-            // $("#log").append(e.data);
-            var data = JSON.parse(e.data);
-            var row = $('<tr></tr>');
+<script>
+$(function() {
+  var es = new EventSource("/enum_server");
+  es.onmessage = function (e) {
+      // $("#log").append(e.data);
+      var data = JSON.parse(e.data);
+      var row = $('<tr></tr>');
 
-            [
-              data['server_name'],
-              data['map_name'],
-              data['game_name'],
-              data['bots_no'],
-              data['players_no']+ '/' + data['max_players'],
-              data['has_vac']==1 ? '✓' : '',
-              data['has_password']==1 ? '🔒' : '',
-            ].forEach(function (td){
-              $('<td></td>').text(td).appendTo(row)
-            })
-            row.append('<td><a href="steam://connect/'+ data['ip'] + ':' + data['port'] + '/">' + data['ip'] + ':' + data['port'] +'</a></td>')
-            row.append('<td>'+ parseInt(data['rtt']*1000) + 'ms</td> ')
-            $('table#result > tbody:last').append(row)
-        };
+      [
+        data['server_name'],
+        data['map_name'],
+        data['game_name'],
+        data['bots_no'],
+        data['players_no']+ '/' + data['max_players'],
+        data['has_vac']==1 ? '✓' : '',
+        data['has_password']==1 ? '🔒' : '',
+      ].forEach(function (td){
+        $('<td></td>').text(td).appendTo(row)
       })
-    </script>
-  </head>
-  <body>
-    <div id="log" style="font-family: courier; font-size: 0.75em;"></div>
-    <table id="result">
-      <thead>
-        <td>server name</td>
-        <td>map</td>
-        <td>game</td>
-        <td>bots</td>
-        <td>players</td>
-        <td>VAC</td>
-        <td>pwd</td>
-        <td>ip:port</td>
-        <td>rtt</td>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </body>
+      row.append('<td><a href="steam://connect/'+ data['ip'] + ':' + data['port'] + '/">' + data['ip'] + ':' + data['port'] +'</a></td>')
+      row.append('<td>'+ parseInt(data['rtt']*1000) + 'ms</td> ')
+      $('table#result > tbody:last').append(row)
+  };
+  $('table#result').stupidtable({
+    'int_loose': function(a, b){
+      return parseInt(a) - parseInt(b)
+    }
+  });
+})
+</script>
+</head>
+<body>
+  <div id="log" style="font-family: courier; font-size: 0.75em;"></div>
+  <table id="result">
+    <thead><tr>
+      <th data-sort="string">server name</th>
+      <th data-sort="string">map</th>
+      <th data-sort="string">game</th>
+      <th data-sort="int_loose">bots</th>
+      <th data-sort="int_loose">players</th>
+      <th>VAC</th>
+      <th>pwd</th>
+      <th>ip:port</th>
+      <th data-sort="int_loose">rtt</th>
+    </tr></thead>
+    <tbody></tbody>
+  </table>
+</body>
 </html>
