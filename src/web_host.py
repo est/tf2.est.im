@@ -23,7 +23,7 @@ def enum_server():
     response.content_type  = 'text/event-stream'
     response.cache_control = 'no-cache'
     yield 'retry: 1000\n'
-    tasks = pool.Pool(10)
+    tasks = pool.Pool(50)
     for r in tasks.imap_unordered(query_server, query_master_server()):
         if r:
             yield 'data: %s\n\n' % json.dumps(r)

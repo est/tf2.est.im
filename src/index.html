@@ -8,12 +8,14 @@
     <script>
       $(document).ready(function() {
         var es = new EventSource("/enum_server");
+        var index = 0;
         es.onmessage = function (e) {
             // $("#log").append(e.data);
             var data = JSON.parse(e.data);
             var row = $('<tr></tr>');
 
             [
+              ++index,
               data['server_name'],
               data['map_name'],
               data['game_name'],
@@ -35,6 +37,7 @@
     <div id="log" style="font-family: courier; font-size: 0.75em;"></div>
     <table id="result">
       <thead>
+        <td>#</td>
         <td>server name</td>
         <td>map</td>
         <td>game</td>
