@@ -9,12 +9,43 @@
       $(document).ready(function() {
         var es = new EventSource("/enum_server");
         es.onmessage = function (e) {
-            $("#log").append("<p>Event: " + e.event + ", data: " + e.data + "</p>");
+            // $("#log").append(e.data);
+            var data = JSON.parse(e.data);
+            var row = $('<tr></tr>');
+
+            [
+              data['server_name'],
+              data['map_name'],
+              data['game_name'],
+              data['bots_no'],
+              data['players_no']+ '/' + data['max_players'],
+              data['has_vac']==1 ? '✓' : '',
+              data['has_password']==1 ? '🔒' : '',
+            ].forEach(function (td){
+              $('<td></td>').text(td).appendTo(row)
+            })
+            row.append('<td><a href="steam://connect/'+ data['ip'] + ':' + data['port'] + '/">' + data['ip'] + ':' + data['port'] +'</a></td>')
+            row.append('<td>'+ parseInt(data['rtt']*1000) + 'ms</td> ')
+            $('table#result > tbody:last').append(row)
         };
       })
     </script>
   </head>
   <body>
     <div id="log" style="font-family: courier; font-size: 0.75em;"></div>
+    <table id="result">
+      <thead>
+        <td>server name</td>
+        <td>map</td>
+        <td>game</td>
+        <td>bots</td>
+        <td>players</td>
+        <td>VAC</td>
+        <td>pwd</td>
+        <td>ip:port</td>
+        <td>rtt</td>
+      </thead>
+      <tbody></tbody>
+    </table>
   </body>
 </html>

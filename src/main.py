@@ -15,10 +15,32 @@ S2 = "208.64.200.39:27011"
 result = open('result.txt', 'w')
 
 def query_master_server(master_addr=("208.64.200.52", 27011)):
-    "https://developer.valvesoftware.com/wiki/Master_Server_Query_Protocol"
+    # https://developer.valvesoftware.com/wiki/Master_Server_Query_Protocol
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.settimeout(5)
-    prev_addr = ('0.0.0.0', 0)
+    last_addr = ('0.0.0.0', 0)
+    # locked to TF2 only    
+    timeout_retry = 3
+    while timeout_retry > 0:
+        b = ''
+        s.sendto('1\xFF%s:%s\0\\gamedir\\tf\0' % last_addr, master_addr)
+        try:
+            b = s.recv(1400)
+        except socket.timeout as err:
+            timeout_retry -= 1
+        if not b:
+            continue
+        timeout_retry = 3
+        i = 0
+        while i+6 <= len(b):
+            addr_bin, port = struct.unpack('!4sH', b[i:i+6])
+            # '\xFF\xFF\xFF\xFF\x66\x0A' is start of reply
+            last_addr = socket.inet_ntoa(addr_bin), port
+            if addr_bin != '\xFF\xFF\xFF\xFF':
+                yield last_addr
+            i += 6
+
+def all_addr_no_dup():
     first_addr = None
     list_has_more = True
     while list_has_more:
@@ -57,12 +79,10 @@ def mute_exception(func):
             return
     return wrapper
 
-
-
 @mute_exception
 def query_server(svr_addr):
+    out = {'ip': svr_addr[0], 'port': svr_addr[1]}
     timeout_retries = 3
-    t0 = 0
     data = None
     while timeout_retries>0:
         t0 = time.time()
@@ -72,12 +92,12 @@ def query_server(svr_addr):
         s.sendto('\xFF\xFF\xFF\xFF\x54Source Engine Query\0', svr_addr)
         try:
             data = s.recv(1400)
+            out['rtt'] = time.time() - t0
             break
         except socket.timeout:
             timeout_retries -= 1
             continue
     if not data: return
-    out = {'rtt': time.time() - t0 }
     fields = data[6:].split('\0') # 4 byte header, "I", version
     out.update((k, fields[i]) for i, k in enumerate(
         'server_name map_name folder_name game_name'.split(' ')
@@ -133,19 +153,13 @@ def get_all():
                 info['player_count'], info['max_players']
             )
 
-
-
-
-
-
-if '__main__' == __name__:
+if '__main__1' == __name__:
     
     # import readline, rlcompleter; readline.parse_and_bind("tab: complete")
 
 
     # __import__('BaseHTTPServer').BaseHTTPRequestHandler.address_string = lambda x:x.client_address[0]
     # run(application, host='0.0.0.0', port=8002, reload=True)
-
 
     p = pool.Pool(100)
     p.map(get_server_desc, query_master_server())
